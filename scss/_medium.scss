@@ -1,0 +1,41 @@
+// /* NAVIGATION STUFF GOES HERE  */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 360px auto;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    // #hamburgerBtn{
+    //     justify-self: end;
+    // }
+} // end header
+
+main{
+
+    #cards{
+        margin-left: 2rem;
+        section {
+            grid-template-areas: 
+                "photo name"
+                "photo address"
+                "photo phone";
+                column-gap: 8px;
+                border: 1px solid red;
+                margin-bottom: 8px;
+                padding-left: 2rem;
+                padding-bottom: 2rem;
+                padding-top: 2rem;
+                grid-template-columns: 1fr 2fr;
+                justify-content: center;
+                align-items: center;
+        }
+        img{ grid-area: photo;
+            height: 100%;
+            object-fit: cover;
+              margin: 0;  }
+        h2{ grid-area: name; }
+        address{ grid-area: address; }
+        a{ grid-area: phone; }
+        }        
+}

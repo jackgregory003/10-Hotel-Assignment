@@ -1,0 +1,51 @@
+header, main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {
+    display: none;
+}
+.moveOver>.content{
+    transform: translate(0px);
+}
+nav {
+    //background-color: transparent;
+    position: static;
+    transform: translateX(0);
+    width: auto;
+ul {
+    display: flex;
+    margin-left: $gutter;
+    justify-content: center;
+    margin-right: 25rem;
+    //border-left: 1px solid rgba(0,0,0,0.5);
+}
+ul li a {
+    padding: .6rem 1.5rem;
+    border: none;
+    //border-right: 1px solid rgba(0,0,0,0.5);
+}
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+            section {
+                grid-template-areas: 
+                    "name name"
+                    "photo address"
+                    "photo phone";
+                column-gap: 8px;
+
+            }
+            img{ grid-area: photo;
+                //  width: 100%;   
+                //  height: auto;   }
+    h2{ grid-area: name; }
+    address{ grid-area: address; }
+    a{ grid-area: phone;
+        margin-right: 10px; }    
+}
