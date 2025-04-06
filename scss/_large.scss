@@ -37,13 +37,11 @@ ul li a {
                 grid-template-areas: 
                     "name name"
                     "photo address"
-                    "photo phone";
+                    "phone phone";
                 column-gap: 8px;
 
             }
-            img{ grid-area: photo;
-                //  width: 100%;   
-                //  height: auto;   }
+            img{ grid-area: photo;}
     h2{ grid-area: name; }
     address{ grid-area: address; }
     a{ grid-area: phone;
