@@ -130,8 +130,7 @@ section {
         "photo"
         "address"
         "phone";
-    border: 1px solid red;
-    background-color: rgb(184, 181, 181);
+    background-color: #8babf1;
     margin-left: 8px;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -152,10 +151,12 @@ img{ grid-area: photo;
     h2{ grid-area: name; }
     address{ grid-area: address; }
     a{ grid-area: phone;
-        border: 1px solid red;
-        background-color: yellow; 
+        background-color: #f57600; 
+        color: white;
         padding: 10px 20px;
         text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
          }
 
 }//end main

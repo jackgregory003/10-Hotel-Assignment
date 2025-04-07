@@ -335,7 +335,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #054fb9;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -375,7 +375,7 @@ ul li a {
   text-align: right;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   text-decoration: none;
-  color: #1d295f;
+  color: #054fb9;
 }
 
 ul li a {
@@ -384,7 +384,7 @@ ul li a {
   text-align: right;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   text-decoration: none;
-  color: #1d295f;
+  color: #054fb9;
 }
 
 ul li a:hover {
@@ -392,7 +392,7 @@ ul li a:hover {
 }
 
 li.active a {
-  color: #7c1d47;
+  color: #c44601;
 }
 
 .moveOver #hamburgerBtn::before {
@@ -408,7 +408,7 @@ li.active a {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #c44601;
   font-weight: 300;
 }
 main p {
@@ -419,8 +419,7 @@ main p {
 main #cards section {
   display: grid;
   grid-template-areas: "name" "photo" "address" "phone";
-  border: 1px solid red;
-  background-color: rgb(184, 181, 181);
+  background-color: #8babf1;
   margin-left: 8px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -444,15 +443,17 @@ main address {
 }
 main a {
   grid-area: phone;
-  border: 1px solid red;
-  background-color: yellow;
+  background-color: #f57600;
+  color: white;
   padding: 10px 20px;
   text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #054fb9;
 }
 
 footer {
@@ -477,19 +478,13 @@ footer a {
     align-items: center;
     padding: 0.5rem 10px;
   }
-  main #cards {
-    margin-left: 2rem;
-  }
   main #cards section {
     grid-template-areas: "photo name" "photo address" "photo phone";
     column-gap: 8px;
-    border: 1px solid red;
     margin-bottom: 8px;
-    padding-left: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
+    grid-template-columns: 260px auto;
     align-items: center;
   }
   main #cards img {
@@ -506,11 +501,12 @@ footer a {
   }
   main #cards a {
     grid-area: phone;
+    margin-top: 17px;
   }
 }
 @media only screen and (min-width: 64rem) {
   header, main {
-    max-width: 960px;
+    max-width: 1120px;
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
